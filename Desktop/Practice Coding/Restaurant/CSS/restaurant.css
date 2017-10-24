@@ -5,7 +5,7 @@ html{
 }
 
 #menupage{
-	background-image:url('../images/backgroundmenu.jpg');
+	background-image:url("../images/backgroundmenu.jpg");
 	    height: 100%; 
 
     /* Center and scale the image nicely */
