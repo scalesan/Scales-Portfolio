@@ -22,7 +22,6 @@ html{
 	text-align: center;
 	background-color:rgba(0,0,0, .9);
 	border-radius:4px;
-	z-index:1;
 }
 
 header{
@@ -187,5 +186,42 @@ div p{
 	max-width:100%;
 }
 
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait)
+ {
+ 	#foodplate{
+ 		visibility:hidden;
+ 	}
+
+ 	#foodplate2{
+ 		visibility:hidden;
+ 	}
+
+ 	html{
+ 		background-size:cover;
+ 		background-repeat: no-repeat;
+ 	}
+ }
+
+ @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+ 	#foodplate{
+ 		visibility:hidden;
+ 	}
+
+ 	#foodplate2{
+ 		visibility:hidden;
+ 	}
+
+ 	html{
+ 		background-size:cover;
+ 		background-repeat: no-repeat;
+ 	}
+ }
 
 
