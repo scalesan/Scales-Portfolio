@@ -1,0 +1,185 @@
+html{
+	background-image:url('../images/background.jpg');
+	background-attachment: fixed;
+
+}
+
+#menupage{
+	background-image:url('../images/backgroundmenu.jpg');
+	    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.maincontainerproperties{
+	margin-left:auto;
+	margin-right:auto;
+	border:2px solid black;
+	width:50rem;
+	min-height:40rem;
+	text-align: center;
+	background-color:rgba(0,0,0, .9);
+	border-radius:4px;
+	z-index:1;
+}
+
+header{
+	font-family: 'Marck Script', cursive;
+	background-color:rgb(171, 91, 46);
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+#textInHeader{
+	font-size:20px;
+}
+
+h1{
+	color:rgb(51, 57, 76);
+	margin-bottom:0;
+}
+
+nav	{
+	text-align: center;
+	background-color: transparent;
+	padding-top:5px;
+	padding-bottom:5px;
+
+}
+
+.dropbtn {
+    background-color: rgb(0,0,26);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+nav a{
+	color:rgb(255,255,255);
+	text-decoration: none;
+	margin-right:5rem;
+	font-size: 24px;
+	font-family: 'Marck Script', cursive;
+}
+
+
+.img-circle{
+	border-radius:50%;
+}
+
+a:hover{
+color:rgb(165, 31, 31);
+text-decoration: underline;
+}
+
+a:visited{
+
+}
+
+a:active{
+
+}
+
+.foodplateHeight{
+	height:120px;
+}
+
+#textInHeader{
+	width: 27rem;
+	margin-left:20px;
+	float: left;
+}
+
+.roundedcorners{
+	border-radius: 3px;
+}
+
+#homephotowithinbody{
+	float:left;
+	margin-left:15px;
+	margin-right: 10px;
+}
+
+.floatleft{
+float:left;
+}
+
+div p{
+	color: rgb(255, 255, 255 );
+	text-align: left;
+	margin-left:10px;
+}
+
+#firstplateposition{
+	float:left;
+	margin-left:10px;
+	margin-top:10px;
+}
+
+.marginForDropdownLinks{
+	margin-left:0;
+}
+
+.menuproperties{
+
+}
+
+#menuscontainer{
+	background-color:rgba(150, 89, 38, .5)
+}
+
+#menuheader{
+	background-color: transparent;
+	font-family: 'Marck Script', cursive;
+	font-size: 48px;
+	font-weight: bold;
+	text-decoration-style: underline;
+}
+
+.photoContainerProperties{	
+	color:rgb(255, 255, 255);
+	width: 4rem;
+	height:5rem;
+	border: 1px solid black;
+	margin-left:15%;
+
+}
+
+
+#indexPhotoGallery img{
+	width:780px;
+	height:300px;
+	border-radius:2px;
+}
+
+.menuCategories{
+	color:rgb(0,0,0);
+	font-family: 'Marck Script', cursive;
+}
+
+.menuoptionsproperties{
+	width: 32rem;
+	height:9rem;
+	border: 2px solid black;
+	background-color: rgba(0, 0, 0, .8);
+	border-radius: 2px;
+	margin-left:20%;
+	margin-bottom:2rem;
+	font-size: 20px;
+	font-family: 'Marck Script', cursive;
+	line-height: 1rem;
+}
+
+.center{
+	text-align: center;
+}
+
+.gold{
+	color:rgb(218, 165, 32)
+}
+
+
+
