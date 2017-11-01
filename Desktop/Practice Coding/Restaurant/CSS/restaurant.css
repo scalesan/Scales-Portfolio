@@ -108,6 +108,10 @@ a:active{
 float:left;
 }
 
+label{
+	color:#fff;
+}
+
 div p{
 	color: rgb(255, 255, 255 );
 	text-align: left;
@@ -174,6 +178,10 @@ div p{
 	line-height: 1rem;
 }
 
+.navcontactpadding{
+	padding-top:2rem;
+}
+
 .center{
 	text-align: center;
 }
@@ -184,6 +192,23 @@ div p{
 
 .responsiveWidth{
 	max-width:100%;
+}
+
+#contactHeader{
+	font-size: 3rem;
+}
+
+#emailLabel{
+	margin-left:33px;
+}
+
+#phoneLabel{
+	margin-left:31px;
+}
+
+.commentProperties{
+	height:6rem;
+	width:12rem;
 }
 
 @media only screen 
@@ -204,7 +229,9 @@ div p{
  		background-size:cover;
  		background-repeat: no-repeat;
  	}
- }
+label{
+	color:rgb(255, 255, 255);
+}
 
  @media only screen 
   and (min-device-width: 320px) 
