@@ -7,20 +7,18 @@
   <title>Contact Us</title>
   <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="CSS/restaurant.css">
-<!-- Latest compiled and minified CSS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type=text/javascript src="js/restaurant.js"></script>
 </head>
 <body>
 <div class="maincontainerproperties">
 <header id="contactHeader">Contact Us</header>
 <nav class="navcontactpadding">
-  <a href="index-restaurant.html" id="homelink">Home</a>"
-    <a href="menu.html">Menu</a>"
+  <a href="index-restaurant.html" id="homelink">Home</a>
+    <a href="menu.html">Menu</a>
       <a href="#">Photos</a>
-      <a href="#">Contact</a> 
+      <a href="contact.php">Contact</a> 
     </nav>
-<p>Anthony's Bar and Grille was founded in 2017 by Anthony Scales and partner Isadora Porter. We specialize in southern style soul food and homemade desserts.
+<p id="contactOpeningParagraph">Anthony's Bar and Grille was founded in 2017 by Anthony Scales and partner Isadora Porter. We specialize in southern style soul food and homemade desserts.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -33,9 +31,24 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   <input type="text" name="firstName"><br><br>
   <label>Last Name: </label>
   <input type="text" name="lastName"><br><br>
-  <label id="emailLabel">Email:</label>
-  <input type="text" name="email"><br><br>
+  <label id="emailLabel">Email: </label>
+  <input type="email" name="email"><br><br>
+  <label id="phoneLabel">Phone: </label>
+  <input type="tel" name="phone"><br><br>
+  <label id="commentLabel">Question/Comment: </label>
+  <input type="text" name="comment" class="commentProperties"><br><br>
+  <input id="submitButton" type="submit" name="submit">
 </form>
+<br>
+<br>
+<p>Anthony's Bar and Grille was founded in 2017 by Anthony Scales and partner Isadora Porter. We specialize in southern style soul food and homemade desserts.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
 </div>
 </body>
 </html>

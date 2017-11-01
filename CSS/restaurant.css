@@ -202,6 +202,26 @@ div p{
 	margin-left:33px;
 }
 
+#phoneLabel{
+	margin-left:31px;
+}
+
+#commentLabel{
+	margin-left:-52px;
+}
+.commentProperties{
+	height:6rem;
+	width:10.5rem;
+}
+
+#submitButton{
+	margin-left:5rem;
+}
+
+#contactOpeningParagraph{
+	margin-bottom: 3rem;
+}
+
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
