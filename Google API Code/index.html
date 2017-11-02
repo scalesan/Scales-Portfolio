@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#map{
+			width:100%;
+			height:500px;
+		}
+	</style>
+</head>
+<body>
+<div id="map"></div>
+<script>
+	function initMap(){
+	var options={
+		zoom:10,
+		center:{lat:42.3314, lng:-83.0458}
+	}
+
+	var map = new google.maps.Map(document.getElementById('map'), options)
+	//Add Marker
+	var marker = new google.maps.Marker({position:{lat:42.362317, lng: -82.936430}, map:map
+	});
+	//Info Window
+	var infoWindow = new google.maps.InfoWindow({
+		content:'<h1>Cass Tech</h1>'
+	});
+	marker.addListener('click', function(){
+		infoWindow.open(map, marker);
+	});
+	//Dynamically add markers and content
+	addMarker({
+		coords: {lat: 42.362317, lng: -82.936430},
+		content: '<h1>Donovan\'s street as a kid</h1>'
+	});
+	addMarker({
+		coords: {lat: 42.36534, lng:-82.936752},
+		content: '<h1>Donovan\'s school as a kid</h1>'
+	});
+	function addMarker(props){
+		var marker = new google.maps.Marker({
+			position:props.coords,
+			map: map
+			// check content
+		});
+		if (props.content){
+			var infoWindow = new google.maps.InfoWindow({
+				content: props.content
+			});
+			marker.addListener('click', function(){
+				infoWindow.open(map, marker);
+			});
+		}
+
+	}
+
+	google.maps.event.addListener(map, 'click', function(event){
+		//Add marker
+		addMarker({coords: event.latLng});
+	})
+	
+
+}
+
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgtP15ZfiA2EriVj3X1-SHhBcXDpv_GME&callback=initMap"
+    async defer></script>
+</body>
+</html>

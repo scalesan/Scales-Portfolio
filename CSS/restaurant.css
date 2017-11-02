@@ -1,23 +1,27 @@
 html{
-	background-image:url('background.jpg');
+	background-image:url('../images/background.jpg');
 	background-attachment: fixed;
 
 }
 
 #menupage{
-	background-image:url("backgroundmenu.jpg");
+	background-image:url("../images/backgroundmenu.jpg");
+	    max-height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .maincontainerproperties{
 	margin-left:auto;
 	margin-right:auto;
 	border:2px solid black;
-	width:50rem;
-	min-height:40rem;
+	max-width:50rem;
 	text-align: center;
 	background-color:rgba(0,0,0, .9);
 	border-radius:4px;
-	z-index:1;
 }
 
 header{
@@ -25,10 +29,13 @@ header{
 	background-color:rgb(171, 91, 46);
 	padding-top:10px;
 	padding-bottom:10px;
+	max-width:100%;
 }
 
 #textInHeader{
-	font-size:20px;
+	font-size:100%;
+	max-width: 100%;
+
 }
 
 h1{
@@ -77,12 +84,12 @@ a:active{
 
 }
 
-.foodplateHeight{
-	height:120px;
+.foodplateHeightandWidth{
+	max-width:159px;
 }
 
 #textInHeader{
-	width: 27rem;
+	width: 50%;
 	margin-left:20px;
 	float: left;
 }
@@ -99,6 +106,10 @@ a:active{
 
 .floatleft{
 float:left;
+}
+
+label{
+	color:#fff;
 }
 
 div p{
@@ -155,15 +166,89 @@ div p{
 }
 
 .menuoptionsproperties{
-	width: 32rem;
-	height:9rem;
+	max-width: 32rem;
 	border: 2px solid black;
-	background-color: rgba(255, 255, 255, .8);
+	background-color: rgba(0, 0, 0, .8);
 	border-radius: 2px;
-	margin-left:20%;
+	margin-left:auto;
+	margin-right:auto;
 	margin-bottom:2rem;
-
+	font-size: 20px;
+	font-family: 'Marck Script', cursive;
+	line-height: 1rem;
 }
 
+.navcontactpadding{
+	padding-top:2rem;
+}
+
+.center{
+	text-align: center;
+}
+
+.gold{
+	color:rgb(218, 165, 32)
+}
+
+.responsiveWidth{
+	max-width:100%;
+}
+
+#contactHeader{
+	font-size: 3rem;
+}
+
+#emailLabel{
+	margin-left:33px;
+}
+
+#phoneLabel{
+	margin-left:31px;
+}
+
+.commentProperties{
+	height:6rem;
+	width:12rem;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait)
+ {
+ 	#foodplate{
+ 		visibility:hidden;
+ 	}
+
+ 	#foodplate2{
+ 		visibility:hidden;
+ 	}
+
+ 	html{
+ 		background-size:cover;
+ 		background-repeat: no-repeat;
+ 	}
+label{
+	color:rgb(255, 255, 255);
+}
+
+ @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+ 	#foodplate{
+ 		visibility:hidden;
+ 	}
+
+ 	#foodplate2{
+ 		visibility:hidden;
+ 	}
+
+ 	html{
+ 		background-size:cover;
+ 		background-repeat: no-repeat;
+ 	}
+ }
 
 
