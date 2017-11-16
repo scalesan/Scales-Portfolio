@@ -1,0 +1,9 @@
+<h1>
+  video-list works perfectly for me!
+</h1>
+
+<p *ngFor='let item of videoList'>
+		<a href='{{item.slug}}' *ngIf='item.slug == "Item-1"'>{{ item.name }}</a>
+		<a href='{{item.slug}}' *ngIf='item.slug == "Item-2"'>{{ item.name }}</a>
+		<a href='{{item.slug}}' *ngIf='item.slug == "Item-3"'>{{ item.name }}</a>
+</p>
