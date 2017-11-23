@@ -1,9 +1,12 @@
 <h1>
-  video-list works perfectly for me!
+  {{title}} {{ todayDate | date:"short"}}
 </h1>
 
-<p *ngFor='let item of videoList'>
-		<a href='{{item.slug}}' *ngIf='item.slug == "Item-1"'>{{ item.name }}</a>
-		<a href='{{item.slug}}' *ngIf='item.slug == "Item-2"'>{{ item.name }}</a>
-		<a href='{{item.slug}}' *ngIf='item.slug == "Item-3"'>{{ item.name }}</a>
-</p>
+<div *ngFor='let item of videoList'>
+		<a href='videos/{{item.slug}}'>{{ item.name }}</a>
+		<div [innerHTML]='item.embed'></div>
+		<div [innerHTML]='"<h1>This is My Video</h1>"'></div>
+
+		<div style="position:relative:height:0;padding-bottom:56.25%" *ngIf = 'item.embed'><iframe width="560" height="315" style="position: absolute; width: 100%; height: 100%; left:0" [src]="getEmbedUrl(item) | safe" frameborder="0" allowfullscreen></iframe>
+		
+</div>
