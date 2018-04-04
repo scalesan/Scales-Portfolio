@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PaperJS Practice</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/circleproj.css">
+	<script type="text/javascript" src="assets/js/lib/paper-full.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.9/howler.js"></script>
+	<script type="text/paperscript" canvas="newCanvas">
+	var circleArray = [];
+	var keyData = {
+	a:{
+		color: "green",
+		sound: new Howl({
+		src: ['assets/sounds/bubbles.mp3']
+		})
+	},
+	s:{
+		color: "red",
+		sound: new Howl({
+		src: ["assets/sounds/clay.mp3"]
+		})
+	},
+	d:{
+		color: "yellow",
+		sound: new Howl({
+		src: ["assets/sounds/confetti.mp3"]
+		})
+	}
+}	
+	
+	function onKeyDown(event) {
+		if(keyData[event.key]){
+			keyData[event.key].color
+			var maxCoord = new Point(view.size.width, view.size.height);
+			var randomCoord = Point.random();
+			var newPoint = maxCoord * randomCoord;
+			var newCircle = new Path.Circle(newPoint, 550);
+			newCircle.fillColor = keyData[event.key].color;
+			keyData[event.key].sound.play();
+			circleArray.push(newCircle);
+		}
+
+	}
+
+	function onFrame(event){
+		for(var i = 0; i < circleArray.length; i++){
+			circleArray[i].fillColor.hue+=1;
+			circleArray[i].scale(.9);
+	}
+		}			
+
+</script>
+</head>
+<body>
+
+<canvas id="newCanvas" resize></canvas>
+</body>
+</html>

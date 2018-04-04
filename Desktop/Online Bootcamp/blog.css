@@ -1,0 +1,25 @@
+div{
+	border: 12px solid #bdc3c7;
+	width:55%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+p, h1{
+	margin-left:3%;
+	padding-left:.3%;
+}
+
+.grayBorder{
+	border-left: 4px solid #bdc3c7;
+}
+
+.blue{
+	color:rgb(135, 206, 250);
+}
+
+.lineProp{
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-bottom: 1%;
+}
