@@ -1,0 +1,162 @@
+body{
+	background:url(DetroitSkyline.jpg);
+	background-position:center;
+	height:100%;
+	font-size: 12px;
+}
+
+a{
+	color:white;
+}
+
+h1, h3{
+	text-shadow: 0px 4px 3px red,
+	0px 8px 13px orange,
+	0px 18px 23px yellow;
+
+}
+
+}
+
+html{
+	height: 100%;
+
+}
+
+h1{
+	font-weight:300;
+	font-size:4em;
+	font-family: 'Great Vibes', cursive;
+}
+
+img{
+	width:100%;
+	padding-bottom:5px;
+}
+
+a.navbar-brand, h2{
+	font-family: 'Great Vibes', cursive;
+}
+
+nav.navbar.navbar-inverse{
+	border-radius: 0;
+}
+
+hr{
+	width:35%;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.aboutproperties{
+	background:url(aboutbackground.jpg);
+	background-position:center;
+	text-align: center;
+}
+
+.aboutimageproperties{
+	height:25em;
+
+}
+
+.jumbotron{
+	background-color: rgba(0,0,0,.8);
+	color:rgb(255,255,255);
+}
+
+
+.col-lg-4{
+	font-family:arial;
+}
+
+.default{
+	background-color: rgb(218, 165, 32);
+	margin-bottom:20px;
+}
+
+.columnBottomSpace{
+	padding-bottom: 5px;
+}
+
+.marginBottomColumn{
+	margin-bottom: 10px;
+}
+
+.profilepic{
+	width: 25%;
+}
+
+.carousel slide{
+	height:25%;
+
+}
+
+.row{
+	margin-left:20px;
+}
+
+div{
+	color:#fff;
+}
+
+#content{
+	color:#fff;
+	text-align: center;
+}
+
+#stellarHeading{
+	color:purple;
+	text-align:center;
+}
+
+#aboutPagePic{
+	width:40%;
+	margin-top:10px;
+}
+
+#aboutContainer{
+	width:60%;
+	margin-left: auto;
+	margin-right:auto;
+	background-color: rgba(0,0,0,.7);
+	border-radius: 3px;
+}
+
+#stellarContainer{
+	width:75%;
+	margin-left: auto;
+	margin-right:auto;
+	background-color: rgba(0,0,0,.7);
+	border-radius: 3px;
+	text-align:left;
+}
+
+#stellarParagraphs{
+	margin-left:5%;
+}
+
+#aboutLastParagraph{
+	padding-bottom:10px;
+}
+
+#stellarBackground{
+	background: url(stellar_background.jpg);
+	background-position:cover;
+	height:100%;
+	font-size: 12px;
+}
+
+.aboutParagraph{
+	margin-left:10px;
+	margin-right:10px;
+}
+
+.headingH1{
+	text-shadow: none;
+	padding-top:20px;
+}
+
+
+
+
+
